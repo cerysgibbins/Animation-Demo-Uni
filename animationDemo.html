@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Animation Demo</title>
+    <link rel="stylesheet" href="animationDemo.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/animationDemo.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <canvas id="myCanvas" width="500" height="300">
+            If you can see this, your browser does not understand HTML Canvas. Try downloading ExplorerCanvas.
+        </canvas>
+        <div id="carSettings">
+            <ul>
+                <li>
+                    
+                    <label for="carOption1">Select Car:</label><select id="car1Option">
+                        <option value="images/car1.png" selected>car 1</option>
+                        <option value="images/car2.png">car 2</option>
+                        <option value="images/car3.png">car 3</option>
+                        <option value="images/car4.png">car 4</option>
+                        <option value="images/car5.png">car 5</option>
+                        <option value="images/car6.png">car 6</option>
+                        <option value="images/car7.png">car 7</option>
+                        <option value="images/car8.png">car 8</option>
+                        <option value="images/truck1.png">truck 1</option>
+                        <option value="images/truck2.png">truck 2</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="car1PositionX">Car Position X-axis (horizontal): </label><input type="text" value="50" id="car1PositionX" name="car1PositionX" />
+                </li>
+                <li>
+                    <label for="car1PositionY">Car Position Y-axis (vertical): </label><input type="text" value="100" id="car1PositionY" name="car1PositionY" />
+                </li>
+                <li>
+                    <label>Velocity (speed): </label><input type="text" value="0" id="car1Velocity" name="car1Velocity" />
+                </li>
+                <li>
+                    <label>Acceleration: </label><input type="text" value="0.1" id="car1Acceleration" name="car1Acceleration" />
+                </li>
+                <li>
+                    <label for="car1MaxSpeed">Max Speed: </label><input type="text" value="1" id="car1MaxSpeed" name="car1MaxSpeed" />
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    
+                    <label for="carOption1">Select Car:</label><select id="car2Option">
+                        <option value="images/car1.png">car 1</option>
+                        <option value="images/car2.png">car 2</option>
+                        <option value="images/car3.png">car 3</option>
+                        <option value="images/car4.png">car 4</option>
+                        <option value="images/car5.png">car 5</option>
+                        <option value="images/car6.png">car 6</option>
+                        <option value="images/car7.png">car 7</option>
+                        <option value="images/car8.png" selected>car 8</option>
+                        <option value="images/truck1.png">truck 1</option>
+                        <option value="images/truck2.png">truck 2</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="car2PositionX">Car Position X-axis (horizontal): </label><input type="text" value="50" id="car2PositionX" name="car2PositionX" />
+                </li>
+                <li>
+                    <label for="car2PositionY">Car Position Y-axis (vertical): </label><input type="text" value="220" id="car2PositionY" name="car2PositionY" />
+                </li>
+                <li>
+                    <label>Velocity (speed): </label><input type="text" value="0" id="car2Velocity" name="car2Velocity" />
+                </li>
+                <li>
+                    <label>Acceleration: </label><input type="text" value="0.5" id="car2Acceleration" name="car2Acceleration" />
+                </li>
+                <li>
+                    <label for="car2MaxSpeed">Max Speed: </label><input type="text" value="10" id="car2MaxSpeed" name="car2MaxSpeed" />
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    
+                    <label for="carOption1">Select Car:</label><select id="car3Option">
+                        <option value="images/car1.png">car 1</option>
+                        <option value="images/car2.png">car 2</option>
+                        <option value="images/car3.png">car 3</option>
+                        <option value="images/car4.png">car 4</option>
+                        <option value="images/car5.png">car 5</option>
+                        <option value="images/car6.png">car 6</option>
+                        <option value="images/car7.png">car 7</option>
+                        <option value="images/car8.png">car 8</option>
+                        <option value="images/truck1.png">truck 1</option>
+                        <option value="images/truck2.png" selected>truck 2</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="car3PositionX">Car Position X-axis (horizontal): </label><input type="text" value="50" id="car3PositionX" name="car3PositionX" />
+                </li>
+                <li>
+                    <label for="car3PositionY">Car Position Y-axis (vertical): </label><input type="text" value="360" id="car3PositionY" name="car3PositionY" />
+                </li>
+                <li>
+                    <label>Velocity (speed): </label><input type="text" value="0" id="car3Velocity" name="car3Velocity" />
+                </li>
+                <li>
+                    <label>Acceleration: </label><input type="text" value="0.2" id="car3Acceleration" name="car3Acceleration" />
+                </li>
+                <li>
+                    <label for="car3MaxSpeed">Max Speed: </label><input type="text" value="5" id="car3MaxSpeed" name="car3MaxSpeed" />
+                </li>
+            </ul>
+            <input type="button" id="updateAnimation" value="Update" />
+            <input type="button" id="pauseAnimation" value="Pause" />
+        </div>
+    </div>
+</body>
+</html>

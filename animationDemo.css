@@ -1,0 +1,40 @@
+﻿html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font-family: Tahoma, Verdana, Arial;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#myCanvas {
+    margin: 0px;
+    padding: 0px;
+    display: block; /* by default the canvas is an inline element, use to make block and get rid of unnecessary default whitespace */
+    /*background-color: #000;*/
+}
+
+#carSettings {
+    position: fixed;
+    bottom: 5px;
+    left: 10px;
+    overflow: auto;
+}
+
+    #carSettings > ul {
+        list-style:none;
+        font-size: 0.8em;
+        float: left;
+    }
+
+        #carSettings > ul label {
+            width: 200px;
+            display: inline-block;
+        }
